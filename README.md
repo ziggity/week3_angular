@@ -24,7 +24,6 @@ Users (zoo staff), should be able to add newly-admitted animals to the app.
   animal-new
   animal-list
   animal-edit
-
 3. Filtering / pipes:
   Geo Location filtering / pipe
 
@@ -38,8 +37,6 @@ Users (zoo staff), should be able to add newly-admitted animals to the app.
 _No known bugs, yet_
 
 ## Setup/Installation Requirements
-
-## Installation of the app:
 
 * `Download or clone project files: https://github.com/ziggity/week3_angular It's that easy!`
 * $`cd week3_angular`
