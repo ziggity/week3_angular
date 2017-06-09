@@ -1,0 +1,17 @@
+{
+  "name": "zoo",
+  "description": "",
+  "main": "",
+  "authors": [
+    "zach beecher <zachbeecher@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
