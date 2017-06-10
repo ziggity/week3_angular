@@ -4,16 +4,36 @@ import { Animal } from './animal.model'
 @Component({
   selector: 'app-root',
   template: `
-  <h1>Zootopia!</h1>
+  <animal-list [childAnimalList]="animalList" (clickSender)="editAnimal($event)" (addClickSender)="addNewAnimal($event)"></animal-list>
+  <animal-edit [cSelectAnimal]="selectedAnimal" (doneButtonClickedSender)="submitEdit()"></animal-edit>
+
+  <animal-new (newAnimalSender)="addAnimal($event)" (doneAddingSender)="doneAdd()"[addNewAnimal]="parentAddNew"></animal-new>
   `
 })
 
 export class AppComponent {
   animalList:Animal[]=[
-    new Animal("Boar", "Husker", "05/17/2015", "Omnivore", "Area 71", 7, "Female", "Truffles", "Hunters"),
-    new Animal("Great white shark", "Bitey", "11/12/2009", "Carnivore", "Area 11", 13, "Male", "Freshy meat", "Motor boat noises"),
-    new Animal("Parrot", "Liza", "04/12/2015", "Herbivore", "Area 21", 12, "Female", "Cracker", "Other birds"),
-    new Animal("Penguin", "Gerry", "12/23/2014", "Seafood", "Area 34", 3, "Male", "Playing catch with his rubber ducky", "Camera Flashes"),
-    new Animal("Rabbit", "Luka", "03/02/2005", "Herbivore", "Area 51", 1, "Male", "Kale treat and pets on the head", "Lound noises and obnoxious kids"),
+    new Animal("Rabbit", "Luka", "05/01/2015", "Young", "Herbivore", "Area 1", 1, "F", "tall grass to gallop through", "Foxes and Hawks"),
+    new Animal("Tiger", "Stripes", "12/18/2012", "Young", "Carnivore", "Area 2", 6, "F", "Raw meat", "Loud noises"),
+    new Animal("Bear", "Joey", "12/23/2014", "Adult1", "Carnivore", "Area 3", 7, "M", "Playing catch", "Sharing meals"),
+    new Animal("Boar", "Husky", "12/06/2014", "Senior", "Omnivore", "Area 4", 2, "M", "Standing in mud", "Being poked"),
+    new Animal("Elephant", "Dumbo", "12/03/2011", "Senior", "Herbivore", "Area 5", 5, "M", "Standing with the herd", "Being tickled")
   ];
+  selectedAnimal = null;
+  parentAddNew = false;
+  doneAdd(){
+    this.parentAddNew = false;
+  }
+  submitEdit() {
+    this.selectedAnimal = null;
+  }
+  editAnimal(clickedAnimal: Animal){
+    this.selectedAnimal = clickedAnimal;
+  }
+  addNewAnimal(add: boolean){
+    this.parentAddNew= add;
+  }
+  addAnimal(newAnimalChild: Animal){
+    this.animalList.push(newAnimalChild);
+  }
 }

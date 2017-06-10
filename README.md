@@ -16,6 +16,12 @@ You've agreed to use your web development skills to help out! Plan and create an
 Requirements
 
 Users (zoo staff), should be able to add newly-admitted animals to the app.
+As a user…
+
+I want to log a newly-admitted animal by submitting a form with animal species, name, age, diet, zoo location, number of needed caretakers, sex, one like and one dislike.
+I want to view a list of animals I have logged.
+I want options to view all animals, only young animals (less than 2 years of age), or only Adult1 animals (more than 2 years of age).
+I want to click an animal to edit its name, age or caretakers.
 
 ## Specs / Planning
 

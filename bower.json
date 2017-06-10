@@ -1,17 +1,21 @@
 {
-  "name": "zoo",
-  "description": "",
+  "name": "zoo-animal-catalog",
+  "description": "App to help zoo keepers",
   "main": "",
   "authors": [
-    "zach beecher <zachbeecher@gmail.com>"
+    "Zach Beecher"
   ],
   "license": "MIT",
   "homepage": "",
+  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
 }

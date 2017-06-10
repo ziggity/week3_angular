@@ -1,0 +1,17 @@
+
+p:hover, h2:hover, h3:hover, h4:hover, h5 {
+  font-size: 2.5em;
+  font-weight: italic;
+}
+
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+}
+.navbar-toggle {
+    z-index:3;
+}
