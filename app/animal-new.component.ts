@@ -80,6 +80,12 @@ import  {Animal} from './animal.model';
               <input #newCaregivers class="form-control" type="number">
             </div>
           </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label>URL of image:</label>
+                <input #newImageUrl class="form-control">
+            </div>
+          </div>
         </div>
         <div class="row">
           <div class="col-md-6">
@@ -93,7 +99,7 @@ import  {Animal} from './animal.model';
             </div>
           </div>
         </div>
-        <button class="btn btn-danger" (click)="submitForm(newSpecies.value, newName.value, newDOB.value, newAgeoption.value, newDiet.value, newLocation.value, newCaregivers.value, newSex.value, newLikes.value, newDislikes.value);addNewAnimal=false; doneAdd();">Add</button>
+        <button class="btn btn-danger" (click)="submitForm(newSpecies.value, newName.value, newDOB.value, newAgeoption.value, newDiet.value, newLocation.value, newCaregivers.value, newImageUrl.value, newSex.value, newLikes.value, newDislikes.value);addNewAnimal=false; doneAdd();">Add</button>
         <button (click)="addNewAnimal=false; doneAdd();" class="btn btn-warning">Cancel</button>
       </div>
     </div>

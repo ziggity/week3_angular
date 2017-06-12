@@ -81,6 +81,7 @@ import  {Animal} from './animal.model';
           <p><b>Sex:</b> {{currentAnimal.sex}}<p>
           <p><b>Diet:</b> {{currentAnimal.diet}}<p>
           <p><b>Caretakers:</b> {{currentAnimal.caretakers}}<p>
+          <img src={{currentAnimal.imageUrl}} width="50%">
         </div>
         <div class="col-md-2">
           <p><b>Likes:</b> {{currentAnimal.likes}}<p>

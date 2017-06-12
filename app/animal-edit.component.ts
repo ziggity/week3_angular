@@ -96,6 +96,12 @@ import  {Animal} from './animal.model';
               <input [(ngModel)]="cSelectAnimal.dislikes" class="form-control">
             </div>
           </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label>URL of image:</label>
+                <input [(ngModel)]="cSelectAnimal.imageUrl" class = "form-control">
+            </div>
+          </div>
         </div>
         <button (click)="doneButtonClicked()" class="btn btn-default pull-right">Submit Changes</button>
         <button (click)="doneButtonClicked()" class="btn btn-default">Cancel</button>
