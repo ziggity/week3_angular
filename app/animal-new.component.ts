@@ -113,8 +113,8 @@ export class AnimalNewComponent{
   doneAdd() {
     this.doneAddingSender.emit();
   }
-    submitForm(species: string, name: string, dob: string, ageOption: string, diet: string, location: string, caregivers: string, sex: string, likes: string, dislikes: string){
-      var newAnimalToAdd: Animal = new Animal (species, name, dob, ageOption, diet, location, parseInt(caregivers), sex, likes, dislikes);
+    submitForm(species: string, name: string, dob: string, ageOption: string, diet: string, location: string, caregivers: string, sex: string, likes: string, dislikes: string, imageUrl: string){
+      var newAnimalToAdd: Animal = new Animal (species, name, dob, ageOption, diet, location, parseInt(caregivers), sex, likes, dislikes, imageUrl);
       this.newAnimalSender.emit(newAnimalToAdd);
     }
     newButtonClicked() {
