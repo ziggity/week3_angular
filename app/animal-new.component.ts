@@ -4,10 +4,10 @@ import  {Animal} from './animal.model';
 @Component({
   selector: 'animal-new',
   template: `
-    <button  class="btn btn-danger" (click)="newButtonClicked()">Add New Animal</button>
+    <button  class="btn btn-danger" (click)="newButtonClicked()">Add New Dinosaur</button>
     <div *ngIf="addNewAnimal">
       <div class="well">
-        <h3>Add New Animal</h3>
+        <h3>Add New Dinosaur</h3>
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">

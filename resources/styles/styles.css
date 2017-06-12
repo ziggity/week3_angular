@@ -1,6 +1,6 @@
 
 p:hover, h2:hover, h3:hover, h4:hover, h5 {
-  font-size: 2.5em;
+  font-size: 1.9em;
   font-weight: italic;
 }
 
@@ -11,7 +11,33 @@ p:hover, h2:hover, h3:hover, h4:hover, h5 {
     top: 0;
     text-align: center;
     margin: auto;
+    background-image: url("http://www.jpmotorpool.com/reference/explorer/decals/jp_logo_red_yellow_white.png");
+    width: 100%;
+}
+body img{
+  width: 300px;
 }
 .navbar-toggle {
     z-index:3;
+}
+
+body {
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/0d/24/69/0d24692daf6d9bb0a355a034faf4f44b.jpg");
+  width: 100%;
+   background-repeat: repeat;
+}
+
+.well {
+  background-image: url("http://img03.deviantart.net/6c74/i/2012/270/2/7/ingen_files___herrerasaurus_by_miyess-d5g1o76.jpg");
+  width: 125%;
+}
+
+h1, h2, h3, h4, p, label {
+  color:blue;
+  color: white;
+ text-shadow:
+  -1px -1px 0 #000,
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
 }

@@ -4,11 +4,11 @@ import  {Animal} from './animal.model';
 @Component({
   selector: 'animal-list',
   template: `
-  <nav class="navbar navbar-default">
+  <nav id="navbar" class="navbar navbar-default">
     <div class="container-fluid">
     <br>
     <br>
-      <a class="navbar-brand" href="/"><h3>Zootopia!</h3></a>
+      <a class="navbar-brand logo" href="/"><h3>Welcome to Jurassic Park 5.0!!</h3></a>
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -28,14 +28,14 @@ import  {Animal} from './animal.model';
                     <option value="All" selected="All">Search By Age</option>
                     <option value="All">All</option>
                     <option value="Young">Young</option>
-                    <option value="Adult1" >Adult1</option>
+                    <option value="Adult1" >Adult</option>
                     <option value="Senior" >Senior</option>
                     <option value="Unknown">Unknown</option>
                 </select>
               </div>
             </form>
           </li>
-          <li (click)="addNewButtonHasBeenClicked(true)" class="btn"><a>Click to Add a New Animal</a></li>
+          <li (click)="addNewButtonHasBeenClicked(true)" class="btn"><a>Click to Add a New Dinosaur</a></li>
 
         </ul>
         <ul class="nav navbar-nav navbar-right">
@@ -50,16 +50,16 @@ import  {Animal} from './animal.model';
       <div class="col-md-2">
       </div>
       <div class="col-md-2">
-        <h3>Animal Species</h3>
+        <h3>Dinosaur Species</h3>
       </div>
       <div class="col-md-2">
-        <h3>Animal Name</h3>
+        <h3>Dinosaur Name</h3>
       </div>
       <div class="col-md-2">
-        <h3>Animal Location</h3>
+        <h3>Dinosaur Location</h3>
       </div>
       <div class="col-md-2">
-        <h3>Animal Details</h3>
+        <h3>Dinosaur Details</h3>
       </div>
       <div class="col-md-2">
         <h3>Likes/Dislikes</h3>
@@ -104,16 +104,8 @@ editButtonHasBeenClicked(animalToEdit: Animal) {
 addNewButtonHasBeenClicked(addString: boolean){
   this.addClickSender.emit(addString);
 }
-
-filterByExhibitOption: string = "All";
 filterByAgeOption = null;
-
-onChangeExhibit(optionFormMenu) {
-  this.filterByAgeOption = null;
-  this.filterByExhibitOption = optionFormMenu;
-}
 onChangeAge(optionFormMenu) {
-  this.filterByExhibitOption = null;
   this.filterByAgeOption = optionFormMenu;
 }
 }
